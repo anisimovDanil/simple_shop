@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+/* Слайдер */
+.slider{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    height: 300px;
+}
+/* Картинка масштабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* Анимация слайдов */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="slider">
+      <div class="item">
+        <img src="pictures/bed.png" width="236" height="280">
+      </div>
+      <div class="item">
+        <img src="pictures/bunk-bed.png" width="236" height="280">
+      </div>
+      <div class="item">
+        <img src="pictures/cushion.png" width="236" height="280">
+      </div>
+      <div class="item">
+        <img src="pictures/drawer.png" width="236" height="280">
+      </div>
+      <div class="item">
+        <img src="pictures/office-chair.png" width="236" height="280">
+      </div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </div>
+  <div class="btns">
+
+  </div>
+
+  <script>
+    showSlides(slideIndex = 1);
+    document.querySelector('.next').addEventListener('click', function nextSlide() {
+        showSlides(slideIndex += 1);
+    });
+
+    document.querySelector('.prev').addEventListener('click', function previousSlide() {
+        showSlides(slideIndex -= 1);
+    });
+
+    function showSlides(n) {
+        let slides = document.getElementsByClassName("item");
+        
+        if (n > slides.length) slideIndex = 1;
+        if (n < 1) slideIndex = slides.length;
+     
+      /* Проходим по каждому слайду в цикле for */
+        for (let slide of slides) slide.style.display = "none";   
+        slides[slideIndex - 1].style.display = "block"; 
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width,initial-scale=1'/>
+	<title>SHOP_ON_JS</title>
+	<link rel="icon" href="pictures/favicon-32x32.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+
+			<!-- begin of navbar -->
+			<nav class="navbar">
+				<a href="index.html" class="navbar-brand">Vintage</a>
+				<button type="button" class="navbar-toggler">
+					<i class="fa fa-bars"></i>
+				</button>
+
+				<div class="navbar-collapse">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">New Arrivals</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="cart">
+					<button type="button" id = "cart-btn">
+						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						<span id="cart-count-info"></span>
+					</button>
+
+					<div class="cart-container">
+						<div class="cart-list">
+							<!--<div class="cart-item">
+							<img src="pictures/armchair.png" alt="product image">
+								<div class="cart-item-info">
+									<h3 class="cart-item-name">Arm Chair</h3>
+									<span class="cart-item-category">Chair</span>
+									<span class="cart-item-price">$120.00</span>
+								</div> 
+		
+								<button type="button" class="cart-item-del-btn">
+									<i class="fa fa-times"></i>
+								</button>
+							</div>-->
+						</div>
+						<div class = "cart-total">
+	                		<h3>Total: $</h3>
+	                		<span id = "cart-total-value"></span>
+	              		</div>
+					</div>
+				</div>
+			</nav>
+			<!-- end of navbar -->
+
+			<!-- begin of banner -->
+			<div class="banner">
+				<div class="item">
+					<div class="banner-item">
+						<div class="banner-content">
+							<h1>Furniture For Your Home</h1>
+							<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<div class="btns">
+								<button type="button" class="btn">know more</button>
+								<button type="button" class="btn">more info</button>
+							</div>
+						</div>
+
+						<div class="banner-img">
+							<img src="pictures/sofa0.png" alt="furniture banner image">
+						</div>
+					</div>
+				</div>
+
+				<div class="item">
+					<div class="banner-item">
+						<div class="banner-content">
+							<h1>Furniture For Your Home</h1>
+							<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<div class="btns">
+								<button type="button" class="btn">know more</button>
+								<button type="button" class="btn">more info</button>
+							</div>
+						</div>
+
+						<div class="banner-img">
+							<img src="pictures/sofa1.png" alt="furniture banner image">
+						</div>
+					</div>
+				</div>
+				<button class="prev">&#10094;</button>
+     			<button class="next">&#10095;</button>
+			</div>
+			<!-- end of banner -->
+		</div>
+	</header>
+
+	<!--  products section  -->
+
+	<section class="products">
+		<div class="container">
+			<h2>Out Products</h2>
+			<div class="product-list">
+
+				<!--  single item  -->
+				<!--<div class="product-item">
+					<div class="product-img">
+						<img src="pictures/bed.png" alt="product image">
+						<button type="button" class="add-to-cart-btn">
+							<i class="fa fa-shopping-cart"></i>Add To Cart
+						</button>
+					</div>	
+
+					<div class="product-content">
+						<h3 class="product-name">Wooden bed</h3>
+						<span class="product-category">Bed</span>
+						<p class="product-price">$120.00</p>
+					</div>				
+				</div>-->
+			</div>
+		</div>
+	</section>
+
+	<!--  end of products section  -->
+
+
+	<!--  footer  -->
+
+	<footer>
+		<div class="footer-banner">
+			<div class="container">
+				<h2>Unlimited Furniture Collection</h2>
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<button type="button" class="btn">View more</button>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="social-icons">
+				<a href="#"><i class="fa fa-facebook-f"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-pinterest"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+			</div>
+		</div>
+	</footer>
+
+	<!--  end of footer  -->
+
+
+
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="carusel.js"></script>
+</body>
+</html>
