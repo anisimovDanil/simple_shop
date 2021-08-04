@@ -38,7 +38,6 @@ function updateCartInfo() {
 	let cartInfo = findCartInfo();
 	cartCountInfo.innerHTML = cartInfo.productCount;
 	cartTotalValue.innerHTML = cartInfo.total;
-	updateCartInfo();
 }
 
 // load product items content from JSON file - загрузка продуктовых "пунктов", содержащихся в JSON файле
@@ -133,6 +132,7 @@ function loadCart() {
 		cartItemID++;
 	}
 	products.forEach(product => addToCartList(product)); // выводим список выбранных товаров из Хранилища
+	updateCartInfo();
 
 }
 
